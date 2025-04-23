@@ -27,7 +27,7 @@ def run():
                 public_key = bitcoin.fast_multiply(bitcoin.G, decoded_private_key)
                 r = requests.get("https://blockchain.info/q/getsentbyaddress/"+bitcoin.pubkey_to_address(public_key))
                 count = i + 1
-                print "Key",count, private_key
+                print("Key",count, private_key)
                 #time.sleep(1.000)
                
                                   
